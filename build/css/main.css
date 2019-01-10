@@ -1,0 +1,188 @@
+.locate-us-main {
+  background: url("../img/map-bg.png") no-repeat;
+  margin-bottom: -4px; }
+  .locate-us-main .locate-title {
+    display: flex;
+    justify-content: center;
+    padding: 69px 0 59px;
+    position: relative; }
+    .locate-us-main .locate-title h1 {
+      font-size: 30px;
+      font-weight: 700;
+      cursor: pointer; }
+      .locate-us-main .locate-title h1 i {
+        width: 20px;
+        height: 12px;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 400;
+        position: absolute;
+        padding-left: 9px;
+        padding-top: 7px;
+        transition: all .3s; }
+  .locate-us-main iframe {
+    border: none;
+    display: none; }
+
+.soc-icons-main {
+  background-color: #212121; }
+  .soc-icons-main .icons-wrapper {
+    padding-top: 68px;
+    display: flex;
+    padding-bottom: 69px; }
+    .soc-icons-main .icons-wrapper .soc-icons-phone {
+      display: flex;
+      flex-direction: column;
+      margin-left: 70px; }
+      .soc-icons-main .icons-wrapper .soc-icons-phone img {
+        width: 50px;
+        height: 50px;
+        margin: auto; }
+      .soc-icons-main .icons-wrapper .soc-icons-phone a {
+        color: #ffffff;
+        font-family: 'Muli', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 33px; }
+    .soc-icons-main .icons-wrapper .soc-icons-footer {
+      width: 60.87%;
+      justify-content: center;
+      align-items: center;
+      display: flex; }
+      .soc-icons-main .icons-wrapper .soc-icons-footer ul {
+        display: flex; }
+        .soc-icons-main .icons-wrapper .soc-icons-footer ul li {
+          margin-right: 35px; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li a {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 2.64px;
+            -webkit-transform: scale(1);
+                    transform: scale(1); }
+            .soc-icons-main .icons-wrapper .soc-icons-footer ul li a i {
+              transition: all .5s; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li:hover:nth-child(1) a i {
+            color: #55acee;
+            -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+            transition: all .5s; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li:hover:nth-child(2) a i {
+            color: #0077B5;
+            -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+            transition: all .5s; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li:hover:nth-child(3) a i {
+            color: #3b5999;
+            -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+            transition: all .5s; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li:hover:nth-child(4) a i {
+            color: #00AFF0;
+            -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+            transition: all .5s; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li:hover:nth-child(5) a i {
+            color: #e4405f;
+            -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+            transition: all .5s; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li:hover:nth-child(6) a i {
+            color: #7D7D7D;
+            -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+            transition: all .5s; }
+          .soc-icons-main .icons-wrapper .soc-icons-footer ul li:last-child {
+            margin-right: 0; }
+    .soc-icons-main .icons-wrapper .soc-icons-adress {
+      display: flex;
+      flex-direction: column; }
+      .soc-icons-main .icons-wrapper .soc-icons-adress img {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto; }
+      .soc-icons-main .icons-wrapper .soc-icons-adress span {
+        color: #ffffff;
+        font-family: 'Muli', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 23px; }
+
+.footer-last-block {
+  background-color: #2e2d2d;
+  padding: 15px 0; }
+  .footer-last-block span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px; }
+
+.map-opened {
+  margin-top: 21px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin-left: 7px;
+  transition: all .3s; }
+
+@media screen and (max-width: 1150px) {
+  .soc-icons-main .icons-wrapper .soc-icons-phone {
+    margin-left: 20px; } }
+
+@media screen and (max-width: 991px) {
+  .soc-icons-main .icons-wrapper .soc-icons-phone a {
+    min-width: 170px; }
+  .soc-icons-main .icons-wrapper .soc-icons-adress span {
+    min-width: 183px; } }
+
+@media screen and (max-width: 768px) {
+  .soc-icons-main .icons-wrapper {
+    flex-direction: column;
+    align-items: center; }
+  .soc-icons-main .icons-wrapper .soc-icons-phone {
+    margin-left: 0; }
+  .soc-icons-main .icons-wrapper .soc-icons-phone a {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .soc-icons-main .icons-wrapper .soc-icons-footer {
+    margin-bottom: 20px; }
+  .soc-icons-main .icons-wrapper .soc-icons-adress span {
+    margin-top: 20px; } }
+
+@media screen and (max-width: 400px) {
+  .locate-us-main .locate-title h1 {
+    font-size: 8vw; } }
+
+html {
+  overflow-x: hidden;
+  position: relative; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  transition: all .5s ease; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+input {
+  outline: 0; }
+
+button {
+  background: none;
+  border: none;
+  outline: 0; }
+
+a {
+  text-decoration: none; }
