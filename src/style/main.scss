@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Prosto+One');
+
 @import "partials/header";
+@import "partials/blue-block";
 @import "partials/footer";
 
 
@@ -10,6 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
   position: relative;
   transition: all .5s ease;
@@ -37,4 +43,11 @@ button {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+  padding: 1px 0;
 }
