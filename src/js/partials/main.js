@@ -1,11 +1,9 @@
-//map toggle
+//tabs
 
-
-    $('.locate-title h1').on('click', function () {
-        $(this).parent().parent().parent().children('iframe').slideToggle(250);
-        $(this).find('i').toggleClass('map-opened');
+    $('.tabs__list--item').on('click', function () {
+       $('.active').removeClass('active');
+       $(this).addClass('active');
     });
-
 
 //gallary-filtering
 

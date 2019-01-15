@@ -77,11 +77,13 @@
       text-align: center;
       cursor: pointer;
       border-radius: 14px;
-      transition: all .3s ease-in-out;
+      transition: all .4s ease-in-out;
+      transform: scale(1);
       &:hover {
         border-color: #ffffff;
         background: rgba(223, 223, 223, 0.3);
-        transition: all .3s ease-in-out;
+        transition: all .4s ease-in-out;
+        transform: scale(1.02);
       }
     }
   }
@@ -130,11 +132,13 @@
     text-align: center;
     cursor: pointer;
     border-radius: 14px;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
+    transform: scale(1);
     &:hover {
       border-color: #ffffff;
       background: rgba(223, 223, 223, 0.3);
-      transition: all .3s ease-in-out;
+      transition: all .4s ease-in-out;
+      transform: scale(1.02);
     }
   }
   .scale__arrow {
