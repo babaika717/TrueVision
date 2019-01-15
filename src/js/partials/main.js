@@ -1,9 +1,17 @@
 //tabs
 
-    $('.tabs__list--item').on('click', function () {
-       $('.active').removeClass('active');
-       $(this).addClass('active');
+    // $('.tabs__list--item').on('click', function () {
+    //    $('.active').removeClass('active');
+    //    $(this).addClass('active');
+    // });
+
+    $('.tabs__list--item a').on('click', function(e) {
+        var currentAttrValue = $(this).attr('href');
+        $('.tabs ' + currentAttrValue).fadeIn(500).siblings().hide();
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+        e.preventDefault();
     });
+
 
 //gallary-filtering
 

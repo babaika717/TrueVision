@@ -76,6 +76,9 @@
       right: -15px;
       top: -1px;
     }
+    a {
+      color: #333;
+    }
   }
 }
 
@@ -83,7 +86,7 @@
   background: #00a7e9 !important;
   border-top-color: #00a7e9 !important;
   z-index: 3 !important;
-  color: #fff !important;
+  color: #ffffff;
   text-shadow: 1px 1px 0 rgba(0,0,0,0.2) !important;
   &:before {
     background: url(../img/active_tab_1.png) no-repeat;
@@ -92,19 +95,88 @@
   &:after {
     background: url(../img/active_tab_2.png) no-repeat;
   }
+  a {
+    color: #ffffff !important;
+  }
 }
 
 .tabs__content {
   padding: 24px;
   .tab {
-    display: flex;
+    display: none;
     .tab__pict {
       max-width: 480px;
-      border: solid 1px #eee;
       margin-right: 40px;
+      .tab__pict--img {
+        border: solid 1px #eee;
+      }
+      .tab__pict__wrapper {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 105px;
+          margin: 12px 17px 0 0;
+          border: solid 1px #eee;
+          height: 100px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
     }
     .tab__inf {
       padding-top: 25px;
+      .tab__inf--header {
+        text-transform: uppercase;
+        color: #666;
+        font-weight: 300;
+        margin: 0 0 10px 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      .tab__inf--wrapper {
+        padding: 0 0 12px 24px;
+        .tab__inf--wrapper--item {
+          font-weight: 300;
+          list-style: disc;
+        }
+      }
+      .tab__price {
+        font-size: 18px;
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        s {
+          font-weight: lighter;
+          color: #666;
+        }
+        b {
+          font-weight: 400;
+        }
+      }
+      .tab__details-but {
+        background: #00a7e9;
+        cursor: pointer;
+        font-size: 15px;
+        display: inline-block;
+        padding: 10px 32px;
+        color: #fff;
+        border-radius: 3px;
+        transition: all .25s ease-in-out;
+        transform: scale(1);
+        &:hover {
+          background: #0099ce;
+          transition: all .25s ease-in-out;
+          transform: scale(1.015);
+        }
+      }
     }
   }
+}
+
+.tab__wrapper {
+  display: flex;
+}
+
+.tab.active {
+  display: flex;
 }

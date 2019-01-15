@@ -273,29 +273,87 @@
       background: url(../img/tab_2.png) no-repeat 0 0;
       right: -15px;
       top: -1px; }
+    .tabs__list .tabs__list--item a {
+      color: #333; }
 
 .tabs__list--item.active {
   background: #00a7e9 !important;
   border-top-color: #00a7e9 !important;
   z-index: 3 !important;
-  color: #fff !important;
+  color: #ffffff;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2) !important; }
   .tabs__list--item.active:before {
     background: url(../img/active_tab_1.png) no-repeat;
     left: -13px; }
   .tabs__list--item.active:after {
     background: url(../img/active_tab_2.png) no-repeat; }
+  .tabs__list--item.active a {
+    color: #ffffff !important; }
 
 .tabs__content {
   padding: 24px; }
   .tabs__content .tab {
-    display: flex; }
+    display: none; }
     .tabs__content .tab .tab__pict {
       max-width: 480px;
-      border: solid 1px #eee;
       margin-right: 40px; }
+      .tabs__content .tab .tab__pict .tab__pict--img {
+        border: solid 1px #eee; }
+      .tabs__content .tab .tab__pict .tab__pict__wrapper {
+        display: flex;
+        justify-content: center; }
+        .tabs__content .tab .tab__pict .tab__pict__wrapper img {
+          width: 105px;
+          margin: 12px 17px 0 0;
+          border: solid 1px #eee;
+          height: 100px; }
+          .tabs__content .tab .tab__pict .tab__pict__wrapper img:last-child {
+            margin-right: 0; }
     .tabs__content .tab .tab__inf {
       padding-top: 25px; }
+      .tabs__content .tab .tab__inf .tab__inf--header {
+        text-transform: uppercase;
+        color: #666;
+        font-weight: 300;
+        margin: 0 0 10px 0;
+        font-family: 'Roboto', sans-serif; }
+      .tabs__content .tab .tab__inf .tab__inf--wrapper {
+        padding: 0 0 12px 24px; }
+        .tabs__content .tab .tab__inf .tab__inf--wrapper .tab__inf--wrapper--item {
+          font-weight: 300;
+          list-style: disc; }
+      .tabs__content .tab .tab__inf .tab__price {
+        font-size: 18px;
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif; }
+        .tabs__content .tab .tab__inf .tab__price s {
+          font-weight: lighter;
+          color: #666; }
+        .tabs__content .tab .tab__inf .tab__price b {
+          font-weight: 400; }
+      .tabs__content .tab .tab__inf .tab__details-but {
+        background: #00a7e9;
+        cursor: pointer;
+        font-size: 15px;
+        display: inline-block;
+        padding: 10px 32px;
+        color: #fff;
+        border-radius: 3px;
+        transition: all .25s ease-in-out;
+        -webkit-transform: scale(1);
+                transform: scale(1); }
+        .tabs__content .tab .tab__inf .tab__details-but:hover {
+          background: #0099ce;
+          transition: all .25s ease-in-out;
+          -webkit-transform: scale(1.015);
+                  transform: scale(1.015); }
+
+.tab__wrapper {
+  display: flex; }
+
+.tab.active {
+  display: flex; }
 
 html {
   overflow-x: hidden;
