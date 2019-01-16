@@ -1,3 +1,6 @@
+.block-3 {
+  border-bottom: 1px solid #f0f0f0; }
+
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -33,6 +36,9 @@
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 300; }
+
+.tabs {
+  margin-bottom: 50px; }
 
 .tabs__list {
   border-bottom: solid 1px #e3e3e3;

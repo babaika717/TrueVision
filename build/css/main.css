@@ -151,28 +151,28 @@
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
-.blue-block {
+.block-1 {
   position: relative;
   overflow: hidden;
   background: #00a7e9;
   color: #fff; }
-  .blue-block .countering__wrapper {
+  .block-1 .countering__wrapper {
     display: flex;
     justify-content: center;
     padding: 60px 0;
     align-items: flex-start; }
-    .blue-block .countering__wrapper .countering--items {
+    .block-1 .countering__wrapper .countering--items {
       width: 25%;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       justify-content: center; }
-      .blue-block .countering__wrapper .countering--items__numbers {
+      .block-1 .countering__wrapper .countering--items__numbers {
         font-size: 65px;
         display: block;
         font-weight: lighter; }
-      .blue-block .countering__wrapper .countering--items__desc {
+      .block-1 .countering__wrapper .countering--items__desc {
         font-weight: 300; }
 
 .block-2 .icons-wrapper {
@@ -201,6 +201,9 @@
     .block-2 .icons-wrapper .icons__item:nth-child(6) {
       background: url("../img/icon6.png") no-repeat;
       margin-bottom: 0; }
+
+.block-3 {
+  border-bottom: 1px solid #f0f0f0; }
 
 .header-wrapper {
   display: flex;
@@ -237,6 +240,9 @@
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 300; }
+
+.tabs {
+  margin-bottom: 50px; }
 
 .tabs__list {
   border-bottom: solid 1px #e3e3e3;
@@ -354,6 +360,100 @@
 
 .tab.active {
   display: flex; }
+
+.text__wrapper {
+  padding: 50px 0; }
+  .text__wrapper .text__main {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #555555; }
+    .text__wrapper .text__main:before {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 12px 16px 0;
+      display: inline-block;
+      border-bottom: solid 1px #00a7e9; }
+    .text__wrapper .text__main:after {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 0 16px 12px;
+      display: inline-block;
+      border-bottom: solid 1px #00a7e9; }
+  .text__wrapper .text__desc {
+    text-align: center; }
+    .text__wrapper .text__desc .text__desc--main {
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #444;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      margin: 8px 0 16px 0; }
+    .text__wrapper .text__desc .text__desc--wrapper {
+      display: flex;
+      justify-content: center;
+      text-align: left; }
+      .text__wrapper .text__desc .text__desc--wrapper .text__desc--wrapper--list {
+        margin-left: 80px; }
+        .text__wrapper .text__desc .text__desc--wrapper .text__desc--wrapper--list .text__desc--wrapper--item {
+          font-size: 18px;
+          color: #555555;
+          font-weight: 400;
+          font-family: 'Roboto', sans-serif; }
+
+.block-5 .head__wrapper {
+  background: #00a7e9; }
+  .block-5 .head__wrapper .head--text {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 25px 0;
+    color: #ffffff; }
+    .block-5 .head__wrapper .head--text:before {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 12px 16px 0;
+      display: inline-block;
+      border-bottom: solid 1px #ffffff; }
+    .block-5 .head__wrapper .head--text:after {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 0 16px 12px;
+      display: inline-block;
+      border-bottom: solid 1px #ffffff; }
+
+.const__part {
+  background: url("../img/bg3.jpg") no-repeat right 0;
+  width: 100%;
+  height: 780px;
+  overflow: hidden; }
+  .const__part .const__main {
+    background: #fff;
+    width: 50%;
+    height: 100%; }
+    .const__part .const__main .const__inside {
+      width: 480px;
+      margin-left: auto;
+      height: 100%;
+      padding-top: 40px;
+      margin-right: 40px; }
 
 html {
   overflow-x: hidden;

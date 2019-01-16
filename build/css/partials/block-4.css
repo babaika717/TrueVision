@@ -1,0 +1,48 @@
+.text__wrapper {
+  padding: 50px 0; }
+  .text__wrapper .text__main {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #555555; }
+    .text__wrapper .text__main:before {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 12px 16px 0;
+      display: inline-block;
+      border-bottom: solid 1px #00a7e9; }
+    .text__wrapper .text__main:after {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 0 16px 12px;
+      display: inline-block;
+      border-bottom: solid 1px #00a7e9; }
+  .text__wrapper .text__desc {
+    text-align: center; }
+    .text__wrapper .text__desc .text__desc--main {
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #444;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      margin: 8px 0 16px 0; }
+    .text__wrapper .text__desc .text__desc--wrapper {
+      display: flex;
+      justify-content: center;
+      text-align: left; }
+      .text__wrapper .text__desc .text__desc--wrapper .text__desc--wrapper--list {
+        margin-left: 80px; }
+        .text__wrapper .text__desc .text__desc--wrapper .text__desc--wrapper--list .text__desc--wrapper--item {
+          font-size: 18px;
+          color: #555555;
+          font-weight: 400;
+          font-family: 'Roboto', sans-serif; }

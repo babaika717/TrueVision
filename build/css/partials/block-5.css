@@ -1,0 +1,44 @@
+.block-5 .head__wrapper {
+  background: #00a7e9; }
+  .block-5 .head__wrapper .head--text {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 25px 0;
+    color: #ffffff; }
+    .block-5 .head__wrapper .head--text:before {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 12px 16px 0;
+      display: inline-block;
+      border-bottom: solid 1px #ffffff; }
+    .block-5 .head__wrapper .head--text:after {
+      content: '';
+      font-size: 14px;
+      width: 160px;
+      line-height: 25px;
+      height: 1px;
+      margin: 0 0 16px 12px;
+      display: inline-block;
+      border-bottom: solid 1px #ffffff; }
+
+.const__part {
+  background: url("../img/bg3.jpg") no-repeat right 0;
+  width: 100%;
+  height: 780px;
+  overflow: hidden; }
+  .const__part .const__main {
+    background: #fff;
+    width: 50%;
+    height: 100%; }
+    .const__part .const__main .const__inside {
+      width: 480px;
+      margin-left: auto;
+      height: 100%;
+      padding-top: 40px;
+      margin-right: 40px; }
