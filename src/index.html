@@ -6,7 +6,7 @@
 	<title>TrueVision</title>
 	<link rel="stylesheet" href="css/main.css">
 	<!--<link href="https://unpkg.com/ionicons@4.4.7/dist/css/ionicons.min.css" rel="stylesheet">-->
-	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<link rel="stylesheet" type="text/css" href="lib/slick-lib/slick/slick.css"/>
 </head>
 <body>
@@ -260,8 +260,49 @@
 		<div class="const__part">
 			<div class="const__main">
 				<div class="const__inside">
-					<form method="POST" action="">
-
+					<form class="const__form" method="POST" action="">
+						<h4 class="const__question">1. Сколько камер вы планируете установить?</h4>
+						<div class="const__wrapper">
+							<div class="const__wrapper--input">
+								<label for="hide_cam" class="const__text">Скрытые</label>
+								<input id="hide_cam" name="hide_cam" type="text" value="0" class="const__input">
+								<i class="fas fa-caret-up const__up-arrow"></i>
+								<i class="fas fa-caret-down const__down-arrow"></i>
+							</div>
+							<div class="const__wrapper--input">
+								<label for="out_cam" class="const__text">Уличные</label>
+								<input id="out_cam" name="out_cam" type="text" value="0" min="0" max="20" class="const__input">
+								<i class="fas fa-caret-up const__up-arrow"></i>
+								<i class="fas fa-caret-down const__down-arrow"></i>
+							</div>
+							<div class="const__wrapper--input">
+								<label for="ins_cam" class="const__text">Внутренние</label>
+								<input id="ins_cam" name="ins_cam" type="text" value="0" min="0" max="20" class="const__input">
+								<i class="fas fa-caret-up const__up-arrow"></i>
+								<i class="fas fa-caret-down const__down-arrow"></i>
+							</div>
+							<div class="const__wrapper--input">
+								<label for="rot_cam" class="const__text">Поворотные</label>
+								<input id="rot_cam" name="rot_cam" type="text" value="0" min="0" max="20" class="const__input">
+								<i class="fas fa-caret-up const__up-arrow"></i>
+								<i class="fas fa-caret-down const__down-arrow"></i>
+							</div>
+						</div>
+						<h4 class="const__question">2. Тип видео</h4>
+						<div class="const__type__wrapper">
+							<div class="const__item">
+								<input class="const__item--input" type="radio" id="eco" name="type" value="eco" checked>
+								<label class="const__item--label checked" for="eco">Эконом (обзорная система слежения)</label>
+							</div>
+							<div class="const__item">
+								<input class="const__item--input" type="radio" id="stand" value="stand" name="type">
+								<label class="const__item--label" for="stand">Стандарт (несколько обзорных камер и камеры с узконаправленной фокусировкой)</label>
+							</div>
+							<div class="const__item">
+								<input class="const__item--input" type="radio" id="pro" value="pro" name="type">
+								<label class="const__item--label" for="pro">Профи (камеры HD с высоким разрешением и цветопередачей)</label>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -278,7 +319,7 @@
 
 
 <script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="lib/slick-lib/slick/slick.min.js"></script>
+<script src="lib/slick-lib/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
 	
 </body>

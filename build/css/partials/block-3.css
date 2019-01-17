@@ -86,7 +86,7 @@
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2) !important; }
   .tabs__list--item.active:before {
     background: url(../img/active_tab_1.png) no-repeat;
-    left: -13px; }
+    left: -12px; }
   .tabs__list--item.active:after {
     background: url(../img/active_tab_2.png) no-repeat; }
   .tabs__list--item.active a {
