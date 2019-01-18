@@ -1,6 +1,6 @@
 .block7__wrapper {
-  padding: 35px 0 55px;
-  .block7__main {
+  padding: 35px 0 55px; }
+  .block7__wrapper .block7__main {
     font-size: 45px;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
@@ -8,8 +8,8 @@
     font-weight: 300;
     color: #333333;
     margin: 20px 0;
-    display: block;
-    &:before {
+    display: block; }
+    .block7__wrapper .block7__main:before {
       content: '';
       font-size: 14px;
       width: 160px;
@@ -17,9 +17,8 @@
       height: 1px;
       margin: 0 12px 16px 0;
       display: inline-block;
-      border-bottom: solid 1px #aaa
-    }
-    &:after {
+      border-bottom: solid 1px #aaa; }
+    .block7__wrapper .block7__main:after {
       content: '';
       font-size: 14px;
       width: 160px;
@@ -27,40 +26,31 @@
       height: 1px;
       margin: 0 0 16px 12px;
       display: inline-block;
-      border-bottom: solid 1px #aaa;
-    }
-  }
-}
+      border-bottom: solid 1px #aaa; }
 
 .block7__content__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  .block7__container {
+  flex-wrap: wrap; }
+  .block7__content__wrapper .block7__container {
     flex: 0 0 50%;
     margin-top: 30px;
-    display: flex;
-    .block7__icon {
+    display: flex; }
+    .block7__content__wrapper .block7__container .block7__icon {
       color: #00a7e9;
       font-size: 50px;
       text-align: center;
-      min-width: 60px;
-    }
-    .block7__wrapper--text {
-      padding-left: 25px;
-      .block7__header {
+      min-width: 60px; }
+    .block7__content__wrapper .block7__container .block7__wrapper--text {
+      padding-left: 25px; }
+      .block7__content__wrapper .block7__container .block7__wrapper--text .block7__header {
         font-size: 17px;
         font-family: 'Roboto', sans-serif;
         color: #333333;
         font-weight: 400;
-        margin-bottom: 5px;
-      }
-      .block7__describe {
+        margin-bottom: 5px; }
+      .block7__content__wrapper .block7__container .block7__wrapper--text .block7__describe {
         font-size: 15px;
         font-family: 'Roboto', sans-serif;
         color: #333333;
         font-weight: 300;
-        max-width: 350px;
-      }
-    }
-  }
-}
+        max-width: 350px; }
