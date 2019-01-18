@@ -62,7 +62,7 @@
     cursor: pointer;
     margin: 0 7px 0 15px;
     font-size: 16px;
-    padding: 0 20px 0 12px;
+    padding: 0 15px 0 12px;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
     &:before {
       content: '';
@@ -117,6 +117,7 @@
       margin-right: 40px;
       .tab__pict--img {
         border: solid 1px #eee;
+        width: 100%;
       }
       .tab__pict__wrapper {
         display: flex;

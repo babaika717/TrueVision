@@ -58,6 +58,9 @@
   font-weight: 400;
   margin-top: 20px;
   font-family: 'Roboto', sans-serif;
+  &:nth-child(5) {
+    margin-top: 40px;
+  }
 }
 
 .const__wrapper {
@@ -152,6 +155,55 @@
   }
 }
 
-.const__item--label.checked {
+.const__item .const__item--label.checked {
   background: url(../img/radio-checked.png) no-repeat 0 0;
+}
+
+.const__archive__wrapper {
+  display: flex;
+  .const__items {
+    position: relative;
+    margin-top: 15px;
+    flex: 33%;
+    .const__item--text {
+      background: url(../img/radio.png) no-repeat 0 0;
+      padding-left: 32px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      color: #333333;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      &:hover {
+        background: url(../img/radio-hover.png) no-repeat 0 0;
+      }
+    }
+  }
+}
+
+.const__items .const__item--text.checked_arch {
+  background: url(../img/radio-checked.png) no-repeat 0 0 !important;
+}
+
+.const__button {
+  cursor: pointer;
+  height: 33px;
+  line-height: 35px;
+  display: inline-block;
+  padding: 0 32px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #00a7e9;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: all .3s ease-in-out;
+  transform: scale(1);
+  &:hover {
+    background: #55bcf8;
+    transition: all .3s ease-in-out;
+    transform: scale(1.02);
+  }
 }

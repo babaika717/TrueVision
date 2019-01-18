@@ -13,13 +13,23 @@ $(document).ready(function () {
 
 //video
 
-$("#video1").on("ended", function (){
-    this.src = this.src
-});
+    $("#video1").on("ended", function (){
+        this.src = this.src
+    });
 
 //calculator
+//step 1
 
-// ...
+// step 2
+    $('.const__item--label').on('click', function () {
+       $('.checked').removeClass('checked');
+       $(this).addClass('checked');
+    });
+    // step 3
+    $('.const__item--text').on('click', function () {
+        $('.checked_arch').removeClass('checked_arch');
+        $(this).addClass('checked_arch');
+    });
 
 //scroll to top
 
