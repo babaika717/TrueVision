@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TrueVision</title>
 	<link rel="stylesheet" href="css/main.css">
-	<!--<link href="https://unpkg.com/ionicons@4.4.7/dist/css/ionicons.min.css" rel="stylesheet">-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<link rel="stylesheet" type="text/css" href="lib/slick-lib/slick/slick.css"/>
 </head>
@@ -13,6 +12,16 @@
 
 <!--=========================================HEADER==============================================-->
 
+ <!--PRELOADER-->
+ <div class="main-preloader">
+     <div class="e-loadholder">
+         <div class="m-loader">
+             <span class="e-text">TrueVision</span>
+         </div>
+     </div>
+     <div id="particleCanvas-Blue"></div>
+     <div id="particleCanvas-White"></div>
+ </div>
  <header>
      <div class="camera_background">
          <img class="camera_background__image" src="img/header-bg.jpg" alt="">
@@ -540,7 +549,7 @@
 	               <ul class="soc__icons--list">
 	                  <li class="soc__icons--list--item">
 	                     <i class="fab fa-instagram soc__icon"></i>
-	                     <a class="soc__icons--text" href="#">Instagram</a>
+	                     <a class="soc__icons--text" target="_blank" href="https://www.instagram.com/truevisionua/">Instagram</a>
 	                  </li>
 	                  <li class="soc__icons--list--item">
 	                     <i class="fab fa-facebook-square soc__icon"></i>
@@ -561,6 +570,7 @@
 
 
 <script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 <script src="lib/slick-lib/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
 	
