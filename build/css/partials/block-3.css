@@ -76,7 +76,8 @@
       right: -15px;
       top: -1px; }
     .tabs__list .tabs__list--item a {
-      color: #333; }
+      color: #555;
+      font-family: 'Roboto', sans-serif; }
 
 .tabs__list--item.active {
   background: #00a7e9 !important;

@@ -48,7 +48,15 @@ $('#return-to-top').click(function(el) {
         scrollTop : 0
     }, 1500);
 });
-
+$('.block8__carousel--init').slick({
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button class="slick_prev_arrow"></button>',
+    nextArrow: '<button class="slick_next_arrow"></button>'
+});
 
 
 });
