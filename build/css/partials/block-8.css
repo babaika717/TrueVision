@@ -33,7 +33,7 @@
   height: 52px;
   cursor: pointer;
   margin-top: -26px;
-  z-index: 999;
+  z-index: 9;
   position: absolute;
   background: url("../img/reply__nav.png") no-repeat; }
 
@@ -44,7 +44,7 @@
   height: 52px;
   cursor: pointer;
   margin-top: -26px;
-  z-index: 999;
+  z-index: 9;
   position: absolute;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
