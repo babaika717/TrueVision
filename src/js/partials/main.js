@@ -14,13 +14,14 @@
     });
 
 //calculator
-//step 1
+    //step 1
 
-// step 2
+    // step 2
     $('.const__item--label').on('click', function () {
        $('.checked').removeClass('checked');
        $(this).addClass('checked');
     });
+    
     // step 3
     $('.const__item--text').on('click', function () {
         $('.checked_arch').removeClass('checked_arch');
@@ -51,9 +52,8 @@ $(window).on("scroll load resize", function () {
 
 //scroll to top
 
-
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 150) {
+    if ($(this).scrollTop() >= 350) {
         $('#return-to-top').fadeIn(200);
     } else {
         $('#return-to-top').fadeOut(200);

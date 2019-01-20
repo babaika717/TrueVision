@@ -1,9 +1,6 @@
-var preloader = document.getElementsByClassName('main-preloader')[0];
-
-    setTimeout(function () {
-        if ( !preloader.classList.contains('done') ) {
-            preloader.classList.add('done');
-            // document.body.style.background = 'none';
-            document.body.style.overflow = 'hidden';
+ setTimeout(function () {
+        if ( !$('.main-preloader').hasClass("done") ) {
+            $('.main-preloader').addClass('done');
+            $('html').css('overflow', 'visible');
         }
     }, 1500);
