@@ -21,3 +21,13 @@
         font-weight: lighter; }
       .block-1 .countering__wrapper .countering--items__desc {
         font-weight: 300; }
+
+@media screen and (max-width: 800px) {
+  .block-1 .countering__wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .block-1 .countering__wrapper .countering--items {
+      width: auto;
+      margin-bottom: 15px; }
+      .block-1 .countering__wrapper .countering--items:last-child {
+        margin-bottom: 0; } }

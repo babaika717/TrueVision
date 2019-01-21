@@ -168,3 +168,33 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 900px) {
+
+  .head-info {
+    flex-direction: column;
+    align-items: center;
+    .head-info__logo {
+      margin-bottom: 15px;
+    }
+    .head-info__descr {
+      margin-bottom: 15px;
+    }
+    .head-info__phone {
+      width: auto;
+      align-items: center;
+      .head-info__button {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .text-wrapper .text-wrapper__big {
+    font-size: 40px;
+  }
+
+  .scale {
+    padding-top: 100px;
+  }
+
+}

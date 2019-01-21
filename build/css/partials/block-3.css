@@ -124,10 +124,14 @@
         margin: 0 0 10px 0;
         font-family: 'Roboto', sans-serif; }
       .tabs__content .tab .tab__inf .tab__inf--wrapper {
-        padding: 0 0 12px 24px; }
+        padding: 0 0 12px; }
         .tabs__content .tab .tab__inf .tab__inf--wrapper .tab__inf--wrapper--item {
           font-weight: 300;
-          list-style: disc; }
+          display: flex; }
+          .tabs__content .tab .tab__inf .tab__inf--wrapper .tab__inf--wrapper--item .tab__inf--icon {
+            font-size: 20px;
+            color: #00a7e9;
+            padding-right: 7px; }
       .tabs__content .tab .tab__inf .tab__price {
         font-size: 18px;
         margin-bottom: 12px;
@@ -160,3 +164,55 @@
 
 .tab.active {
   display: flex; }
+
+@media screen and (max-width: 991px) {
+  .tabs__list {
+    flex-direction: column;
+    padding: 0;
+    border-bottom: none; }
+    .tabs__list .tabs__list--item {
+      margin: 0;
+      text-align: center; }
+    .tabs__list .tabs__list--item:before, .tabs__list .tabs__list--item:after {
+      background: none; }
+  .tab__wrapper {
+    flex-direction: column; } }
+
+@media screen and (max-width: 850px) {
+  .header-wrapper {
+    margin-top: 50px; }
+    .header-wrapper .header__text {
+      font-size: 34px; }
+      .header-wrapper .header__text:before, .header-wrapper .header__text:after {
+        width: 120px; }
+    .header-wrapper .header__desc {
+      font-size: 25px; } }
+
+@media screen and (max-width: 650px) {
+  .header__text:before, .header__text:after {
+    content: none !important; } }
+
+@media screen and (max-width: 574px) {
+  .tabs__content {
+    padding: 24px 0;
+    display: flex;
+    justify-content: center; }
+  .tabs__content .tab .tab__pict {
+    max-width: none;
+    margin-right: 0; }
+  .tabs__content .tab .tab__pict .tab__pict__wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .tabs__content .tab .tab__pict .tab__pict__wrapper img {
+      width: 50%;
+      height: 100%;
+      margin-right: auto !important;
+      margin-left: auto !important; } }
+
+@media screen and (max-width: 400px) {
+  .header-wrapper {
+    text-align: center; }
+    .header-wrapper .header__text {
+      font-size: 30px; }
+    .header-wrapper .header__desc {
+      font-size: 20px; } }

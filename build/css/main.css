@@ -44,9 +44,6 @@
   100% {
     color: #3BB2D0; } }
 
-html {
-  overflow: hidden; }
-
 .main-preloader {
   background: #222222;
   width: 100%;
@@ -355,6 +352,24 @@ html {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
+@media screen and (max-width: 900px) {
+  .head-info {
+    flex-direction: column;
+    align-items: center; }
+    .head-info .head-info__logo {
+      margin-bottom: 15px; }
+    .head-info .head-info__descr {
+      margin-bottom: 15px; }
+    .head-info .head-info__phone {
+      width: auto;
+      align-items: center; }
+      .head-info .head-info__phone .head-info__button {
+        margin-top: 5px; }
+  .text-wrapper .text-wrapper__big {
+    font-size: 40px; }
+  .scale {
+    padding-top: 100px; } }
+
 .block-1 {
   position: relative;
   overflow: hidden;
@@ -378,6 +393,16 @@ html {
         font-weight: lighter; }
       .block-1 .countering__wrapper .countering--items__desc {
         font-weight: 300; }
+
+@media screen and (max-width: 800px) {
+  .block-1 .countering__wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .block-1 .countering__wrapper .countering--items {
+      width: auto;
+      margin-bottom: 15px; }
+      .block-1 .countering__wrapper .countering--items:last-child {
+        margin-bottom: 0; } }
 
 .block-2 .icons-wrapper {
   display: flex;
@@ -405,6 +430,12 @@ html {
     .block-2 .icons-wrapper .icons__item:nth-child(6) {
       background: url("../img/icon6.png") no-repeat;
       margin-bottom: 0; }
+
+@media screen and (max-width: 850px) {
+  .block-2 .icons-wrapper {
+    flex-direction: column; }
+  .block-2 .icons-wrapper .icons__item:nth-child(5) {
+    margin-bottom: 25px; } }
 
 .block-3 {
   border-bottom: 1px solid #f0f0f0; }
@@ -532,10 +563,14 @@ html {
         margin: 0 0 10px 0;
         font-family: 'Roboto', sans-serif; }
       .tabs__content .tab .tab__inf .tab__inf--wrapper {
-        padding: 0 0 12px 24px; }
+        padding: 0 0 12px; }
         .tabs__content .tab .tab__inf .tab__inf--wrapper .tab__inf--wrapper--item {
           font-weight: 300;
-          list-style: disc; }
+          display: flex; }
+          .tabs__content .tab .tab__inf .tab__inf--wrapper .tab__inf--wrapper--item .tab__inf--icon {
+            font-size: 20px;
+            color: #00a7e9;
+            padding-right: 7px; }
       .tabs__content .tab .tab__inf .tab__price {
         font-size: 18px;
         margin-bottom: 12px;
@@ -568,6 +603,58 @@ html {
 
 .tab.active {
   display: flex; }
+
+@media screen and (max-width: 991px) {
+  .tabs__list {
+    flex-direction: column;
+    padding: 0;
+    border-bottom: none; }
+    .tabs__list .tabs__list--item {
+      margin: 0;
+      text-align: center; }
+    .tabs__list .tabs__list--item:before, .tabs__list .tabs__list--item:after {
+      background: none; }
+  .tab__wrapper {
+    flex-direction: column; } }
+
+@media screen and (max-width: 850px) {
+  .header-wrapper {
+    margin-top: 50px; }
+    .header-wrapper .header__text {
+      font-size: 34px; }
+      .header-wrapper .header__text:before, .header-wrapper .header__text:after {
+        width: 120px; }
+    .header-wrapper .header__desc {
+      font-size: 25px; } }
+
+@media screen and (max-width: 650px) {
+  .header__text:before, .header__text:after {
+    content: none !important; } }
+
+@media screen and (max-width: 574px) {
+  .tabs__content {
+    padding: 24px 0;
+    display: flex;
+    justify-content: center; }
+  .tabs__content .tab .tab__pict {
+    max-width: none;
+    margin-right: 0; }
+  .tabs__content .tab .tab__pict .tab__pict__wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .tabs__content .tab .tab__pict .tab__pict__wrapper img {
+      width: 50%;
+      height: 100%;
+      margin-right: auto !important;
+      margin-left: auto !important; } }
+
+@media screen and (max-width: 400px) {
+  .header-wrapper {
+    text-align: center; }
+    .header-wrapper .header__text {
+      font-size: 30px; }
+    .header-wrapper .header__desc {
+      font-size: 20px; } }
 
 .text__wrapper {
   padding: 50px 0; }
@@ -660,6 +747,7 @@ html {
       width: 480px;
       margin-left: auto;
       height: 100%;
+      padding-left: 15px;
       padding-top: 20px;
       margin-right: 40px; }
 
@@ -975,7 +1063,7 @@ html {
     background: #00a7e9;
     width: 50%; }
     .contacts .contacts__wrapper .contacts__wrapper--content {
-      width: 53%;
+      width: 480px;
       margin-left: auto;
       padding: 50px 0 70px; }
   .contacts .contacts__map {
@@ -1140,4 +1228,8 @@ a {
   width: 960px;
   position: relative;
   margin: 0 auto;
-  padding: 1px 0; }
+  padding: 1px 15px; }
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: auto; } }

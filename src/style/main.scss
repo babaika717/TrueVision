@@ -92,5 +92,13 @@ a {
   width: 960px;
   position: relative;
   margin: 0 auto;
-  padding: 1px 0;
+  padding: 1px 15px;
+}
+
+@media screen and (max-width: 1050px) {
+
+  .container {
+    width: auto;
+  }
+
 }

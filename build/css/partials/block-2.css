@@ -24,3 +24,9 @@
     .block-2 .icons-wrapper .icons__item:nth-child(6) {
       background: url("../img/icon6.png") no-repeat;
       margin-bottom: 0; }
+
+@media screen and (max-width: 850px) {
+  .block-2 .icons-wrapper {
+    flex-direction: column; }
+  .block-2 .icons-wrapper .icons__item:nth-child(5) {
+    margin-bottom: 25px; } }
