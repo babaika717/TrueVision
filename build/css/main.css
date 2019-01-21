@@ -44,6 +44,9 @@
   100% {
     color: #3BB2D0; } }
 
+html {
+  overflow: hidden; }
+
 .main-preloader {
   background: #222222;
   width: 100%;
@@ -369,6 +372,12 @@
     font-size: 40px; }
   .scale {
     padding-top: 100px; } }
+
+@media screen and (max-width: 450px) {
+  .text-wrapper .text-wrapper__big {
+    font-size: 29px; }
+  .text-wrapper .text-wrapper__small {
+    font-size: 22px; } }
 
 .block-1 {
   position: relative;
