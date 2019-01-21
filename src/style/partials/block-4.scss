@@ -55,3 +55,44 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+
+  .text__wrapper .text__main {
+    font-size: 40px;
+    &:before, &:after {
+      width: 120px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .text__wrapper .text__main:before,
+  .text__wrapper .text__main:after {
+    content: none !important;
+  }
+
+  .text__wrapper .text__desc .text__desc--wrapper {
+    flex-direction: column;
+    text-align: center;
+    .text__desc--wrapper--list {
+      margin-left: 0;
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .text__wrapper .text__main {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .text__wrapper .text__desc .text__desc--main {
+    font-size: 18px;
+  }
+
+}
