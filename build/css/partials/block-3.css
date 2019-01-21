@@ -108,6 +108,8 @@
         justify-content: center; }
         .tabs__content .tab .tab__pict .tab__pict__wrapper img {
           width: 105px;
+          -o-object-fit: cover;
+             object-fit: cover;
           margin: 12px 17px 0 0;
           border: solid 1px #eee;
           height: 100px; }
