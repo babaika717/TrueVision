@@ -1,3 +1,13 @@
+//arrow scroll down
+
+$('.scale__arrow').on('click', function (e) {
+    e.preventDefault();
+    $('body, html').animate({
+        scrollTop : $("#block-1").offset().top
+    }, 1200);
+
+});
+
 //tabs
 
     $('.tabs__list--item').on('click', function(e) {

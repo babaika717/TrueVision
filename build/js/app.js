@@ -1,6 +1,16 @@
 $(document).ready(function () {
 
 
+//arrow scroll down
+
+$('.scale__arrow').on('click', function (e) {
+    e.preventDefault();
+    $('body, html').animate({
+        scrollTop : $("#block-1").offset().top
+    }, 1200);
+
+});
+
 //tabs
 
     $('.tabs__list--item').on('click', function(e) {
@@ -71,7 +81,7 @@ $('#return-to-top').click(function(el) {
 });
 $('.block8__carousel--init').slick({
     infinite: true,
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
@@ -85,6 +95,26 @@ $('.block8__carousel--init').slick({
             }
         }
     ]
+});
+
+
+$(window).on('load resize', function () {
+
+    var tabSlider = $('.tab__pict--slider');
+
+    if ( $(window).width() >= '575') {
+        tabSlider.slick("unslick");
+    } else {
+        tabSlider.not(".slick-initialized").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: true,
+            prevArrow: '<button class="tab_prev_arrow"></button>',
+            nextArrow: '<button class="tab_next_arrow"></button>'
+        });
+    }
+
 });
 particlesJS("particleCanvas-Blue", {
 	particles: {

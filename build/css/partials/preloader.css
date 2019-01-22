@@ -42,6 +42,9 @@
   100% {
     color: #3BB2D0; } }
 
+html {
+  overflow: hidden; }
+
 .main-preloader {
   background: #222222;
   width: 100%;
