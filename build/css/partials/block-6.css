@@ -64,3 +64,43 @@
     transition: all .3s ease-in-out;
     -webkit-transform: scale(1.02);
             transform: scale(1.02); }
+
+@media screen and (max-width: 950px) {
+  .block6__wrapper .block6__main {
+    font-size: 35px; }
+    .block6__wrapper .block6__main:before, .block6__wrapper .block6__main:after {
+      width: 120px !important; }
+  .block6__wrapper .block6__text {
+    font-size: 16px; } }
+
+@media screen and (max-width: 850px) {
+  .block6__wrapper {
+    margin: 30px 0; }
+  .block6__form--subm {
+    width: 100%;
+    display: flex;
+    margin: 25px auto 0;
+    justify-content: center;
+    max-width: 160px; }
+  .block6__input:nth-child(3) {
+    margin-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  .block6__wrapper .block6__main:before,
+  .block6__wrapper .block6__main:after {
+    content: none; }
+  .block6__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .block6__input {
+    margin-right: 0;
+    margin-bottom: 10px; }
+    .block6__input:nth-child(3) {
+      margin-bottom: 0; } }
+
+@media screen and (max-width: 550px) {
+  .block6__wrapper .block6__main {
+    font-size: 7vw; }
+  .block6__wrapper .block6__text {
+    font-size: 14px; } }
