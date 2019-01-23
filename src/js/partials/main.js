@@ -77,3 +77,21 @@ $('#return-to-top').click(function(el) {
         scrollTop : 0
     }, 1500);
 });
+
+//popup
+
+$(".head-info__button").on('click', function () {
+   $('.callback--popup').addClass('popup-opened');
+   $('.popup__header').text('Заявка на обратный звонок');
+});
+
+$('.popup__close-btn, .popup__background').on('click', function () {
+    $('.callback--popup').removeClass('popup-opened');
+});
+
+//popup 2
+
+$('.scale__button').on('click', function () {
+   $('.callback--popup').addClass('popup-opened');
+   $('.popup__header').text('Заявка на консультацию специалиста');
+});
