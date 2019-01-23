@@ -165,33 +165,6 @@
 .tab.active {
   display: flex; }
 
-.tab__pict--slider {
-  display: none; }
-
-.tab_prev_arrow {
-  top: 50%;
-  width: 26px;
-  left: -40px;
-  height: 52px;
-  cursor: pointer;
-  margin-top: -26px;
-  z-index: 9;
-  position: absolute;
-  background: url("../img/reply__nav.png") no-repeat; }
-
-.tab_next_arrow {
-  top: 50%;
-  right: -40px;
-  width: 26px;
-  height: 52px;
-  cursor: pointer;
-  margin-top: -26px;
-  z-index: 9;
-  position: absolute;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  background: url("../img/reply__nav.png") no-repeat; }
-
 @media screen and (max-width: 991px) {
   .tabs__list {
     flex-direction: column;
@@ -227,28 +200,14 @@
   .tabs__content .tab .tab__pict {
     max-width: none;
     margin-right: 0; }
-  .tabs__content .tab .tab__pict .tab__pict__wrapper {
-    flex-direction: column;
-    align-items: center; }
-    .tabs__content .tab .tab__pict .tab__pict__wrapper img {
-      width: 50%;
-      height: 100%;
-      margin-right: auto !important;
-      margin-left: auto !important; }
-  .tab__pict {
-    display: none; }
-  .tab__pict--slider {
-    max-width: 420px;
-    max-height: 400px;
-    margin: 0 auto; }
-    .tab__pict--slider img {
-      width: 70%;
-      height: 100%;
-      border: solid 1px #eee; } }
+  .tabs__content .tab .tab__pict .tab__pict__wrapper img {
+    width: 22%;
+    margin-right: 10px;
+    margin-left: auto !important; } }
 
-@media screen and (max-width: 500px) {
-  .tab__pict--slider {
-    width: 300px; } }
+@media screen and (max-width: 474px) {
+  .tabs__content .tab .tab__pict .tab__pict__wrapper img {
+    height: 80px; } }
 
 @media screen and (max-width: 400px) {
   .header-wrapper {
@@ -257,5 +216,10 @@
       font-size: 30px; }
     .header-wrapper .header__desc {
       font-size: 20px; }
-  .tab__pict--slider {
-    width: 200px; } }
+  .tabs__content .tab .tab__pict .tab__pict__wrapper {
+    max-height: 80px; }
+  .tabs__content .tab .tab__pict .tab__pict__wrapper img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    min-height: 75px; } }

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher:400,700i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
-@import "partials/preloader";
 @import "partials/header";
 @import "partials/block-1";
 @import "partials/block-2";
@@ -15,7 +14,7 @@
 
 
 html {
-  overflow-x: hidden;
+  overflow-x: visible;
   position: relative;
 }
 

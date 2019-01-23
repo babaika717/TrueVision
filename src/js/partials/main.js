@@ -1,6 +1,7 @@
 //arrow scroll down
 
-$('.scale__arrow').on('click', function (e) {
+$('.scale__arrow--wrapper').click(function(e) {
+
     e.preventDefault();
     $('body, html').animate({
         scrollTop : $("#block-1").offset().top

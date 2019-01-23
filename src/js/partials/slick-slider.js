@@ -17,21 +17,21 @@ $('.block8__carousel--init').slick({
 });
 
 
-$(window).on('load resize', function () {
-
-    var tabSlider = $('.tab__pict--slider');
-
-    if ( $(window).width() >= '575') {
-        tabSlider.slick("unslick");
-    } else {
-        tabSlider.not(".slick-initialized").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            infinite: true,
-            prevArrow: '<button class="tab_prev_arrow"></button>',
-            nextArrow: '<button class="tab_next_arrow"></button>'
-        });
-    }
-
-});
+// $(window).on('load resize', function () {
+//
+//     var tabSlider = $('.tab__pict--slider');
+//
+//     if ( $(window).width() >= '575') {
+//         tabSlider.slick("unslick");
+//     } else {
+//         tabSlider.not(".slick-initialized").slick({
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             arrows: true,
+//             infinite: true,
+//             prevArrow: '<button class="tab_prev_arrow"></button>',
+//             nextArrow: '<button class="tab_next_arrow"></button>'
+//         });
+//     }
+//
+// });

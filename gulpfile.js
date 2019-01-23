@@ -6,6 +6,8 @@ var gulp 	 	= require("gulp"),
 	plumber		= require("gulp-plumber"),
 	sass 	 	= require("gulp-sass"),
 	rigger 	 	= require("gulp-rigger"),
+	cleanCSS     = require('gulp-clean-css'),
+	rename       = require("gulp-rename"),
 	browserSync	= require("browser-sync"),
 	reload 	 	= browserSync.reload;
 
@@ -66,6 +68,8 @@ var path = {
         .pipe(plumber())
 		.pipe(sass())
 		.pipe(preFixer())
+		.pipe(rename({suffix: ".min"}))
+		.pipe(cleanCSS())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(reload({stream: true}));
 	});
@@ -75,6 +79,16 @@ var path = {
 		"js:build",
 		"style:build"
 	]);
+
+	// gulp.task('mincss', function() {
+    //
+	// 	return gulp.src("build/css/main.css")
+    //
+	//
+    //
+	// 		.pipe(gulp.dest("build/css"));
+    //
+	// });
 
 	// ставим watcher
 
