@@ -240,7 +240,14 @@
     display: flex;
     margin: 0 auto;
     color: #fff;
+    transition: all .25s ease-in-out;
     border-radius: 3px;
+    transform: scale(1);
+    &:hover {
+      background: #0085bc;
+      transition: all .25s ease-in-out;
+      transform: scale(1.015);
+    }
   }
 }
 

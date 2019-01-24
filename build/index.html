@@ -354,69 +354,78 @@
 			<div class="const__main">
 				<div class="const__inside">
 					<form class="const__form" method="POST" action="">
-						<h4 class="const__question">1. Сколько камер вы планируете установить?</h4>
-						<div class="const__wrapper">
-							<div class="const__wrapper--input">
-								<label for="hide_cam" class="const__text">Скрытые</label>
-								<input id="hide_cam" name="hide_cam" type="text" value="0" class="const__input">
-								<i class="fas fa-caret-up const__up-arrow"></i>
-								<i class="fas fa-caret-down const__down-arrow"></i>
-							</div>
-							<div class="const__wrapper--input">
-								<label for="out_cam" class="const__text">Уличные</label>
-								<input id="out_cam" name="out_cam" type="text" value="0" class="const__input">
-								<i class="fas fa-caret-up const__up-arrow"></i>
-								<i class="fas fa-caret-down const__down-arrow"></i>
-							</div>
-							<div class="const__wrapper--input">
-								<label for="ins_cam" class="const__text">Внутренние</label>
-								<input id="ins_cam" name="ins_cam" type="text" value="0" class="const__input">
-								<i class="fas fa-caret-up const__up-arrow"></i>
-								<i class="fas fa-caret-down const__down-arrow"></i>
-							</div>
-							<div class="const__wrapper--input">
-								<label for="rot_cam" class="const__text">Поворотные</label>
-								<input id="rot_cam" name="rot_cam" type="text" value="0" class="const__input">
-								<i class="fas fa-caret-up const__up-arrow"></i>
-								<i class="fas fa-caret-down const__down-arrow"></i>
-							</div>
-						</div>
-						<h4 class="const__question">2. Тип видео</h4>
-						<div class="const__type__wrapper">
-							<div class="const__item">
-								<input class="const__item--input" type="radio" id="eco" name="type" value="eco" checked>
-								<label class="const__item--label checked" for="eco">Эконом (обзорная система слежения)</label>
-							</div>
-							<div class="const__item">
-								<input class="const__item--input" type="radio" id="stand" value="stand" name="type">
-								<label class="const__item--label" for="stand">Стандарт (несколько обзорных камер и камеры с узконаправленной фокусировкой)</label>
-							</div>
-							<div class="const__item">
-								<input class="const__item--input" type="radio" id="pro" value="pro" name="type">
-								<label class="const__item--label" for="pro">Профи (камеры HD с высоким разрешением и цветопередачей)</label>
-							</div>
-						</div>
-						<h4 class="const__question">3. Архив записи</h4>
-						<div class="const__archive__wrapper">
-							<div class="const__items">
-								<input class="const__item--radio" type="radio" id="min" value="min" name="archive" checked>
-								<label class="const__item--text checked_arch" for="min">До 30 дней</label>
-							</div>
-							<div class="const__items">
-								<input class="const__item--radio" type="radio" id="med" value="med" name="archive">
-								<label class="const__item--text" for="med">До 60 дней</label>
-							</div>
-							<div class="const__items">
-								<input class="const__item--radio" type="radio" id="max" value="max" name="archive">
-								<label class="const__item--text" for="max">Более 60 дней</label>
-							</div>
-						</div>
-						<button class="const__button" type="submit">Рассчитать</button>
+                        <div class="const__form--step1">
+                            <h4 class="const__question">1. Сколько камер вы планируете установить?</h4>
+                            <div class="const__wrapper">
+                                <div class="const__wrapper--input">
+                                    <label for="hide_cam" class="const__text">Скрытые</label>
+                                    <input id="hide_cam" name="hide_cam" type="text" value="0" class="const__input">
+                                    <i class="fas fa-caret-up const__up-arrow"></i>
+                                    <i class="fas fa-caret-down const__down-arrow"></i>
+                                </div>
+                                <div class="const__wrapper--input">
+                                    <label for="out_cam" class="const__text">Уличные</label>
+                                    <input id="out_cam" name="out_cam" type="text" value="0" class="const__input">
+                                    <i class="fas fa-caret-up const__up-arrow"></i>
+                                    <i class="fas fa-caret-down const__down-arrow"></i>
+                                </div>
+                                <div class="const__wrapper--input">
+                                    <label for="ins_cam" class="const__text">Внутренние</label>
+                                    <input id="ins_cam" name="ins_cam" type="text" value="0" class="const__input">
+                                    <i class="fas fa-caret-up const__up-arrow"></i>
+                                    <i class="fas fa-caret-down const__down-arrow"></i>
+                                </div>
+                                <div class="const__wrapper--input">
+                                    <label for="rot_cam" class="const__text">Поворотные</label>
+                                    <input id="rot_cam" name="rot_cam" type="text" value="0" class="const__input">
+                                    <i class="fas fa-caret-up const__up-arrow"></i>
+                                    <i class="fas fa-caret-down const__down-arrow"></i>
+                                </div>
+                            </div>
+                            <h4 class="const__question">2. Тип видео</h4>
+                            <div class="const__type__wrapper">
+                                <div class="const__item">
+                                    <input class="const__item--input" type="radio" id="eco" name="type" value="eco" checked>
+                                    <label class="const__item--label checked" for="eco">Эконом (обзорная система слежения)</label>
+                                </div>
+                                <div class="const__item">
+                                    <input class="const__item--input" type="radio" id="stand" value="stand" name="type">
+                                    <label class="const__item--label" for="stand">Стандарт (несколько обзорных камер и камеры с узконаправленной фокусировкой)</label>
+                                </div>
+                                <div class="const__item">
+                                    <input class="const__item--input" type="radio" id="pro" value="pro" name="type">
+                                    <label class="const__item--label" for="pro">Профи (камеры HD с высоким разрешением и цветопередачей)</label>
+                                </div>
+                            </div>
+                            <h4 class="const__question">3. Архив записи</h4>
+                            <div class="const__archive__wrapper">
+                                <div class="const__items">
+                                    <input class="const__item--radio" type="radio" id="min" value="min" name="archive" checked>
+                                    <label class="const__item--text checked_arch" for="min">До 30 дней</label>
+                                </div>
+                                <div class="const__items">
+                                    <input class="const__item--radio" type="radio" id="med" value="med" name="archive">
+                                    <label class="const__item--text" for="med">До 60 дней</label>
+                                </div>
+                                <div class="const__items">
+                                    <input class="const__item--radio" type="radio" id="max" value="max" name="archive">
+                                    <label class="const__item--text" for="max">Более 60 дней</label>
+                                </div>
+                            </div>
+                            <button class="const__button" type="submit">Рассчитать</button>
+                        </div>
+                        <div class="const__form--step2">
+                            <h3 class="step2__header">Введите свои контактные данные, и наши специалисты рассчитают стоимость вашего заказа</h3>
+                            <input type="text" name="name" placeholder="Введите имя" class="step2__input">
+                            <input type="tel" name="phone" placeholder="Введите телефон" class="step2__input">
+                            <button type="button" class="step2__back">&lt; Назад</button>
+                            <button type="submit" class="step2__submt">Отправить</button>
+                        </div>
 					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div class="block-6">
 		<div class="container">
 			<div class="block6__wrapper">
